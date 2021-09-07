@@ -228,13 +228,20 @@ header .header-content {
 }
 
 header .header-content .header-content-h1 {
+  position: absolute;
+  top: -5rem;
+  right: calc(50% - 30px);
   z-index: 2;
 }
 
 header .header-content .header-content-h1 h1 {
   font-family: "HannariMincho";
   font-size: 2rem;
-  margin: 0 2rem 0 2rem;
+  margin: 0;
+}
+
+header .header-content .header-content-h1 h1:last-child {
+  margin-top: 20rem;
 }
 
 header .header-content img {
