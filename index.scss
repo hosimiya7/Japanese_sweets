@@ -1,0 +1,234 @@
+/*============
+初期設定
+=============*/
+
+@charset "UTF-8";
+@import url(sanitize.css);
+@font-face {
+  font-family: "HannariMincho";
+  src: url(font/HannariMincho-Regular.otf);
+}
+@font-face {
+  font-family: "harenosora";
+  src: url(font/Harenosora.otf);
+}
+@font-face {
+  font-family: "Yugoth";
+  src: url(font/YuGothR.ttc);
+}
+@font-face {
+  font-family: "YuGothB";
+  src: url(font/YuGothB.ttc);
+}
+
+/*============
+  変数定義
+=============*/
+
+$main-color: #ffffff;
+$sub-color-pink: #f1dbdb;
+$sub-color-yellow: #fffcdd;
+$sub-color-brown: #f1e2d5;
+$sub-color-blue: #c5d6d6;
+$sub-color-indigo: #c5c7d6;
+
+$font-color: #222222;
+
+$font-family-title: "HannariMincho";
+$font-family-heading: "harenosora";
+$font-family-text-bold: "YugothB";
+$font-family-text: "YugothR";
+
+/*============
+全体設定
+=============*/
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: $font-color;
+  font-family: $font-family-text;
+  font-size: 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*============
+ハンバーガーメニュー
+=============*/
+
+/*============
+nav
+=============*/
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 3;
+  opacity: 0;
+}
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+nav .inner {
+  padding: 25px;
+}
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .inner ul li {
+  position: relative;
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+nav .inner ul li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+nav .inner ul li a:hover {
+  background: #e4e4e4;
+}
+@media screen and (max-width: 767px) {
+  nav {
+    left: -220px;
+    width: 220px;
+  }
+}
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 3;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+.open .toggle_btn span {
+  background-color: #fff;
+}
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+  transform: translateY(10px) rotate(-315deg);
+}
+.open .toggle_btn span:nth-child(2) {
+  opacity: 0;
+}
+.open .toggle_btn span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+  transform: translateY(-10px) rotate(315deg);
+}
+/*============
+#mask
+=============*/
+#mask {
+  display: none;
+  transition: all .5s;
+}
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 2;
+  cursor: pointer;
+}
+/*============
+ ヘッダー
+=============*/
+
+header{
+  text-align: center;
+  background-image: url(img/header_back.png);
+  border-bottom-right-radius: 2500px 500px;
+  border-bottom-left-radius: 2500px 500px;
+  margin-left: -150px;
+  margin-right: -150px;
+  padding-left: 150px;
+  padding-right: 150px;
+  height: 90vh;
+  .header-top{
+    text-align: left;
+    a{
+
+      i{
+        position: fixed;
+        top: 80px;
+        right: 30px;
+      }
+    }
+    .size{
+      font-size: 1.3rem;
+    }
+    img{
+      width: 50px;
+      margin: 1rem 0 0 1rem;
+
+    }
+  }
+  .header-content{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    display: inline-block;
+      .header-content-h1{
+        z-index: 2;
+        h1{
+          font-family: $font-family-title;
+          font-size: 2rem;
+          margin: 0 2rem 0 2rem;
+
+        }
+      }
+    img{
+      width: 100px;
+      position: absolute;
+      top: 200px;
+      right: calc(50% - 50px);
+      z-index: 1;
+    }
+  }
+}
