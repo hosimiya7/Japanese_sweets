@@ -54,6 +54,23 @@ $font-family-text: "YugothR";
   text-decoration: none;
 }
 
+h2 {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  display: inline-block;
+  font-family: $font-family-heading;
+  font-size: 1.5rem;
+  z-index: 1;
+  margin-top: -1rem;
+}
+
+.background-heading{
+  width: 50px;
+  height: 50px;
+  background-color: $sub-color-yellow;
+  border-radius: 50%;
+}
 
 /*============
 ハンバーガーメニュー
@@ -118,7 +135,7 @@ nav .inner ul li a:hover {
   display: block;
   position: fixed;
   top: 25px;
-  right: 25px;
+  right: 15px;
   width: 30px;
   height: 30px;
   transition: all 0.5s;
@@ -183,7 +200,7 @@ nav .inner ul li a:hover {
 =============*/
 
 header {
-  .header-container{
+  .header-container {
     overflow: hidden;
   }
   .header-wrapper {
@@ -207,7 +224,8 @@ header {
       i {
         position: fixed;
         top: 80px;
-        right: 30px;
+        right: 20px;
+        z-index: 3;
       }
     }
     .size {
@@ -246,7 +264,6 @@ header {
     }
   }
   .header-img {
-
     img {
       &:nth-child(1) {
         width: 130px;
@@ -292,3 +309,44 @@ header {
 /*============
  メイン
 =============*/
+
+.first {
+  margin-top: 6rem;
+  position: relative;
+  .background-heading{
+    margin: 0 1rem 0 0;
+    margin-left: calc(100% - 2.5rem);
+    z-index: 0;
+  }
+  .first-content {
+    text-align: right;
+    margin-right: 1rem;
+    .first-content-p{
+      text-align: left;
+      margin: -3rem 0 0 1rem;
+      width: 80%;
+      p{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .first-img {
+    overflow: hidden;
+    position: relative;
+    .background-first-img{
+      width: 150px;
+      height: 150px;
+      background-color: $sub-color-yellow;
+      border-radius: 50%;
+      margin: 5rem 0 0 0;
+      margin-left: calc(100% - 130px);
+    }
+    img {
+      position: absolute;
+      width: 70%;
+      border-radius: 70px;
+      top: 2rem;
+      left: 1rem;
+    }
+  }
+}

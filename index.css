@@ -40,6 +40,25 @@
   text-decoration: none;
 }
 
+h2 {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  display: inline-block;
+  font-family: "harenosora";
+  font-size: 1.5rem;
+  z-index: 1;
+  margin-top: -1rem;
+}
+
+.background-heading {
+  width: 50px;
+  height: 50px;
+  background-color: #fffcdd;
+  border-radius: 50%;
+}
+
 /*============
 ハンバーガーメニュー
 =============*/
@@ -112,7 +131,7 @@ nav .inner ul li a:hover {
   display: block;
   position: fixed;
   top: 25px;
-  right: 25px;
+  right: 15px;
   width: 30px;
   height: 30px;
   -webkit-transition: all 0.5s;
@@ -215,7 +234,8 @@ header .header-top {
 header .header-top a i {
   position: fixed;
   top: 80px;
-  right: 30px;
+  right: 20px;
+  z-index: 3;
 }
 
 header .header-top .size {
@@ -307,4 +327,51 @@ header .header-img img:nth-child(5) {
 /*============
  メイン
 =============*/
+.first {
+  margin-top: 6rem;
+  position: relative;
+}
+
+.first .background-heading {
+  margin: 0 1rem 0 0;
+  margin-left: calc(100% - 2.5rem);
+  z-index: 0;
+}
+
+.first .first-content {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.first .first-content .first-content-p {
+  text-align: left;
+  margin: -3rem 0 0 1rem;
+  width: 80%;
+}
+
+.first .first-content .first-content-p p {
+  margin-bottom: 1rem;
+}
+
+.first .first-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.first .first-img .background-first-img {
+  width: 150px;
+  height: 150px;
+  background-color: #fffcdd;
+  border-radius: 50%;
+  margin: 5rem 0 0 0;
+  margin-left: calc(100% - 130px);
+}
+
+.first .first-img img {
+  position: absolute;
+  width: 70%;
+  border-radius: 70px;
+  top: 2rem;
+  left: 1rem;
+}
 /*# sourceMappingURL=index.css.map */
