@@ -38,6 +38,7 @@
   font-size: 1rem;
   list-style: none;
   text-decoration: none;
+  overflow: hidden;
 }
 
 /*============
@@ -190,6 +191,10 @@ nav .inner ul li a:hover {
 =============*/
 header {
   text-align: center;
+  height: 90vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
   background-image: url(img/header_back.png);
   border-bottom-right-radius: 2500px 500px;
   border-bottom-left-radius: 2500px 500px;
@@ -197,7 +202,6 @@ header {
   margin-right: -150px;
   padding-left: 150px;
   padding-right: 150px;
-  height: 90vh;
 }
 
 header .header-top {
@@ -250,5 +254,45 @@ header .header-content img {
   top: 200px;
   right: calc(50% - 50px);
   z-index: 1;
+}
+
+header .header-img img:nth-child(1) {
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  top: 432px;
+  left: calc(25% - 65px);
+}
+
+header .header-img img:nth-child(2) {
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  top: 520px;
+  left: -40px;
+}
+
+header .header-img img:nth-child(3) {
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  top: 550px;
+  left: calc(50% - 65px);
+}
+
+header .header-img img:nth-child(4) {
+  width: 100px;
+  height: 130px;
+  position: absolute;
+  top: 416px;
+  left: calc(75% - 65px);
+}
+
+header .header-img img:nth-child(5) {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: 500px;
+  right: -40px;
 }
 /*# sourceMappingURL=index.css.map */
