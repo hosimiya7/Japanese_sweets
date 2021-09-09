@@ -374,4 +374,36 @@ header .header-img img:nth-child(5) {
   top: 2rem;
   left: 1rem;
 }
+
+.sweet {
+  margin-top: 6rem;
+}
+
+.sweet .sweet-content {
+  margin-left: 1rem;
+}
+
+.sweet .sweet-menu h3 {
+  font-family: "harenosora";
+  display: inline-block;
+  background-color: #f1dbdb;
+  border-radius: 50%;
+  padding: 0.4rem 0.8rem 0.6rem 0.8rem;
+}
+
+.sweet .sweet-menu img {
+  width: 180px;
+  height: 150px;
+}
+
+.sweet .sweet-menu p {
+  width: 80%;
+}
+
+.sweet .sweet-menu .background {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f1dbdb;
+}
 /*# sourceMappingURL=index.css.map */
