@@ -360,13 +360,8 @@ header {
     h3{
       font-family: $font-family-heading;
       display: inline-block;
-      background-color: $sub-color-pink;
       border-radius: 50%;
-      padding: 0.4rem 0.8rem 0.6rem 0.8rem;
-    }
-    img{
-      width: 180px;
-      height: 150px;
+      padding: 0.2rem 0.6rem 0.6rem 0.6rem;
     }
     p{
       width: 80%;
@@ -375,7 +370,53 @@ header {
       width: 150px;
       height: 150px;
       border-radius: 50%;
+    }
+  }
+  .spring{
+    h3{
       background-color: $sub-color-pink;
+    }
+    .background{
+      background-color: $sub-color-pink;
+    }
+    img{
+      width: 180px;
+      height: 150px;
+    }
+  }
+  .summer{
+    h3{
+      background-color: $sub-color-blue;
+    }
+    .background{
+      background-color: $sub-color-blue;
+    }
+    img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .fall{
+    h3{
+      background-color: $sub-color-brown;
+    }
+    .background{
+      background-color: $sub-color-brown;
+    }
+    img{
+      width: 170px;
+      height: 110px;
+    }
+  }.winter{
+    h3{
+      background-color: $sub-color-indigo;
+    }
+    .background{
+      background-color: $sub-color-indigo;
+    }
+    img{
+      width: 170px;
+      height: 120px;
     }
   }
 }

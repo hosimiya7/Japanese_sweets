@@ -386,14 +386,8 @@ header .header-img img:nth-child(5) {
 .sweet .sweet-menu h3 {
   font-family: "harenosora";
   display: inline-block;
-  background-color: #f1dbdb;
   border-radius: 50%;
-  padding: 0.4rem 0.8rem 0.6rem 0.8rem;
-}
-
-.sweet .sweet-menu img {
-  width: 180px;
-  height: 150px;
+  padding: 0.2rem 0.6rem 0.6rem 0.6rem;
 }
 
 .sweet .sweet-menu p {
@@ -404,6 +398,57 @@ header .header-img img:nth-child(5) {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.sweet .spring h3 {
   background-color: #f1dbdb;
+}
+
+.sweet .spring .background {
+  background-color: #f1dbdb;
+}
+
+.sweet .spring img {
+  width: 180px;
+  height: 150px;
+}
+
+.sweet .summer h3 {
+  background-color: #c5d6d6;
+}
+
+.sweet .summer .background {
+  background-color: #c5d6d6;
+}
+
+.sweet .summer img {
+  width: 150px;
+  height: 150px;
+}
+
+.sweet .fall h3 {
+  background-color: #f1e2d5;
+}
+
+.sweet .fall .background {
+  background-color: #f1e2d5;
+}
+
+.sweet .fall img {
+  width: 170px;
+  height: 110px;
+}
+
+.sweet .winter h3 {
+  background-color: #c5c7d6;
+}
+
+.sweet .winter .background {
+  background-color: #c5c7d6;
+}
+
+.sweet .winter img {
+  width: 170px;
+  height: 120px;
 }
 /*# sourceMappingURL=index.css.map */
