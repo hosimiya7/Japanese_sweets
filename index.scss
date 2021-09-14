@@ -59,7 +59,7 @@ h2 {
   writing-mode: vertical-rl;
   text-orientation: upright;
   display: inline-block;
-  font-family: $font-family-heading;
+  font-family: $font-family-title;
   font-size: 1.5rem;
   z-index: 1;
   margin-top: -1rem;
@@ -70,6 +70,36 @@ h2 {
   height: 50px;
   background-color: $sub-color-yellow;
   border-radius: 50%;
+}
+
+.btn{
+  text-align: center;
+  margin-top: 3rem;
+  a{
+    position: relative;
+    display: inline-block;
+    margin:  0 15%;
+    &:hover > .background-btn {
+      background-color: $sub-color-yellow;
+    }
+    .background-btn{
+      width: 30px;
+      height: 30px;
+      background-color: $sub-color-pink;
+      border-radius: 10px;
+      margin-top: 1rem;
+      transform: rotate(45deg);
+      z-index: -1;
+      margin-left: -10%;
+    }
+    p{
+      margin-top: -2rem;
+      font-size: 1.2rem;
+      font-family: $font-family-heading;
+      // 前面に表示する用
+      transform: rotate(0);
+    }
+  }
 }
 
 /*============
@@ -357,6 +387,7 @@ header {
     margin-left: 1rem;
   }
   .sweet-menu{
+    margin-top: -12rem;
     h3{
       font-family: $font-family-heading;
       display: inline-block;
@@ -364,7 +395,8 @@ header {
       padding: 0.2rem 0.6rem 0.6rem 0.6rem;
     }
     p{
-      width: 80%;
+      width: 90%;
+      margin: 1rem 0;
     }
     .background{
       width: 150px;
@@ -380,6 +412,9 @@ header {
       background-color: $sub-color-pink;
     }
     img{
+      position: absolute;
+      top: 3.5rem;
+      left: 5rem;
       width: 180px;
       height: 150px;
     }
@@ -387,11 +422,15 @@ header {
   .summer{
     h3{
       background-color: $sub-color-blue;
+
     }
     .background{
       background-color: $sub-color-blue;
     }
     img{
+      position: absolute;
+      top: 3.5rem;
+      left: 0rem;
       width: 150px;
       height: 150px;
     }
@@ -404,6 +443,9 @@ header {
       background-color: $sub-color-brown;
     }
     img{
+      position: absolute;
+      top: 5rem;
+      left: 5rem;
       width: 170px;
       height: 110px;
     }
@@ -415,9 +457,27 @@ header {
       background-color: $sub-color-indigo;
     }
     img{
+      position: absolute;
+      top: 4rem;
+      left: 0rem;
       width: 170px;
       height: 120px;
     }
   }
+  .menu-right{
+    position: relative;
+    margin-left: 15%;
+  }
+  .menu-left{
+    margin: 0 10% 0 5%;
+    position: relative;
+    h3{
+      margin-left: 80%;
+    }
+    .background{
+      margin-left: 30%;
+    }
+  }
+
 }
 

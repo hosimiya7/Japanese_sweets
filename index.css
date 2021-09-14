@@ -46,7 +46,7 @@ h2 {
           writing-mode: vertical-rl;
   text-orientation: upright;
   display: inline-block;
-  font-family: "harenosora";
+  font-family: "HannariMincho";
   font-size: 1.5rem;
   z-index: 1;
   margin-top: -1rem;
@@ -57,6 +57,41 @@ h2 {
   height: 50px;
   background-color: #fffcdd;
   border-radius: 50%;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15%;
+}
+
+.btn a:hover > .background-btn {
+  background-color: #fffcdd;
+}
+
+.btn a .background-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #f1dbdb;
+  border-radius: 10px;
+  margin-top: 1rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: -1;
+  margin-left: -10%;
+}
+
+.btn a p {
+  margin-top: -2rem;
+  font-size: 1.2rem;
+  font-family: "harenosora";
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 /*============
@@ -383,6 +418,10 @@ header .header-img img:nth-child(5) {
   margin-left: 1rem;
 }
 
+.sweet .sweet-menu {
+  margin-top: -12rem;
+}
+
 .sweet .sweet-menu h3 {
   font-family: "harenosora";
   display: inline-block;
@@ -391,7 +430,8 @@ header .header-img img:nth-child(5) {
 }
 
 .sweet .sweet-menu p {
-  width: 80%;
+  width: 90%;
+  margin: 1rem 0;
 }
 
 .sweet .sweet-menu .background {
@@ -409,6 +449,9 @@ header .header-img img:nth-child(5) {
 }
 
 .sweet .spring img {
+  position: absolute;
+  top: 3.5rem;
+  left: 5rem;
   width: 180px;
   height: 150px;
 }
@@ -422,6 +465,9 @@ header .header-img img:nth-child(5) {
 }
 
 .sweet .summer img {
+  position: absolute;
+  top: 3.5rem;
+  left: 0rem;
   width: 150px;
   height: 150px;
 }
@@ -435,6 +481,9 @@ header .header-img img:nth-child(5) {
 }
 
 .sweet .fall img {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
   width: 170px;
   height: 110px;
 }
@@ -448,7 +497,28 @@ header .header-img img:nth-child(5) {
 }
 
 .sweet .winter img {
+  position: absolute;
+  top: 4rem;
+  left: 0rem;
   width: 170px;
   height: 120px;
+}
+
+.sweet .menu-right {
+  position: relative;
+  margin-left: 15%;
+}
+
+.sweet .menu-left {
+  margin: 0 10% 0 5%;
+  position: relative;
+}
+
+.sweet .menu-left h3 {
+  margin-left: 80%;
+}
+
+.sweet .menu-left .background {
+  margin-left: 30%;
 }
 /*# sourceMappingURL=index.css.map */
