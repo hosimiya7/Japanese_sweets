@@ -52,6 +52,11 @@ h2 {
   margin-top: -1rem;
 }
 
+h3 {
+  font-family: "harenosora";
+  font-weight: normal;
+}
+
 .background-heading {
   width: 50px;
   height: 50px;
@@ -423,7 +428,6 @@ header .header-img img:nth-child(5) {
 }
 
 .sweet .sweet-menu h3 {
-  font-family: "harenosora";
   display: inline-block;
   border-radius: 50%;
   padding: 0.2rem 0.6rem 0.6rem 0.6rem;
@@ -520,5 +524,64 @@ header .header-img img:nth-child(5) {
 
 .sweet .menu-left .background {
   margin-left: 30%;
+}
+
+.cafe {
+  margin-top: 6rem;
+}
+
+.cafe .cafe-content {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.cafe .cafe-content .background-heading {
+  margin: 0 1rem 0 0;
+  margin-left: calc(100% - 2.5rem);
+  z-index: 0;
+}
+
+.cafe .cafe-menu {
+  background-image: url(img/cafe-background.png);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: 0% 70%;
+}
+
+.cafe .cafe-menu p {
+  text-align: left;
+  margin: 0 4rem 4rem 1rem;
+}
+
+.cafe .cafe-menu h3 {
+  font-size: 1.2rem;
+}
+
+.cafe .cafe-menu .cafe-menu-zenzai {
+  text-align: left;
+  margin-top: -2rem;
+}
+
+.cafe .cafe-menu .cafe-menu-zenzai img {
+  margin: -3rem 0 0 1rem;
+}
+
+.cafe .cafe-menu .cafe-menu-zenzai h3 {
+  text-align: right;
+  margin: 6rem 2rem 0 0;
+}
+
+.cafe .cafe-menu .cafe-menu-parfait h3 {
+  text-align: left;
+  margin: 6rem 0 0 2rem;
+}
+
+.cafe .cafe-menu .cafe-menu-parfait img {
+  margin-top: -5rem;
+}
+
+.cafe img {
+  width: 180px;
+  border-radius: 60%;
 }
 /*# sourceMappingURL=index.css.map */

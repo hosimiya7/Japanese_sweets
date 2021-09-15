@@ -65,24 +65,29 @@ h2 {
   margin-top: -1rem;
 }
 
-.background-heading{
+h3{
+  font-family: $font-family-heading;
+  font-weight: normal;
+}
+
+.background-heading {
   width: 50px;
   height: 50px;
   background-color: $sub-color-yellow;
   border-radius: 50%;
 }
 
-.btn{
+.btn {
   text-align: center;
   margin-top: 3rem;
-  a{
+  a {
     position: relative;
     display: inline-block;
-    margin:  0 15%;
+    margin: 0 15%;
     &:hover > .background-btn {
       background-color: $sub-color-yellow;
     }
-    .background-btn{
+    .background-btn {
       width: 30px;
       height: 30px;
       background-color: $sub-color-pink;
@@ -92,7 +97,7 @@ h2 {
       z-index: -1;
       margin-left: -10%;
     }
-    p{
+    p {
       margin-top: -2rem;
       font-size: 1.2rem;
       font-family: $font-family-heading;
@@ -343,7 +348,7 @@ header {
 .first {
   margin-top: 6rem;
   position: relative;
-  .background-heading{
+  .background-heading {
     margin: 0 1rem 0 0;
     margin-left: calc(100% - 2.5rem);
     z-index: 0;
@@ -351,11 +356,11 @@ header {
   .first-content {
     text-align: right;
     margin-right: 1rem;
-    .first-content-p{
+    .first-content-p {
       text-align: left;
       margin: -3rem 0 0 1rem;
       width: 80%;
-      p{
+      p {
         margin-bottom: 1rem;
       }
     }
@@ -363,7 +368,7 @@ header {
   .first-img {
     overflow: hidden;
     position: relative;
-    .background-first-img{
+    .background-first-img {
       width: 150px;
       height: 150px;
       background-color: $sub-color-yellow;
@@ -381,37 +386,36 @@ header {
   }
 }
 
-.sweet{
+.sweet {
   margin-top: 6rem;
-  .sweet-content{
+  .sweet-content {
     margin-left: 1rem;
   }
-  .sweet-menu{
+  .sweet-menu {
     margin-top: -12rem;
-    h3{
-      font-family: $font-family-heading;
+    h3 {
       display: inline-block;
       border-radius: 50%;
       padding: 0.2rem 0.6rem 0.6rem 0.6rem;
     }
-    p{
+    p {
       width: 90%;
       margin: 1rem 0;
     }
-    .background{
+    .background {
       width: 150px;
       height: 150px;
       border-radius: 50%;
     }
   }
-  .spring{
-    h3{
+  .spring {
+    h3 {
       background-color: $sub-color-pink;
     }
-    .background{
+    .background {
       background-color: $sub-color-pink;
     }
-    img{
+    img {
       position: absolute;
       top: 3.5rem;
       left: 5rem;
@@ -419,15 +423,14 @@ header {
       height: 150px;
     }
   }
-  .summer{
-    h3{
-      background-color: $sub-color-blue;
-
-    }
-    .background{
+  .summer {
+    h3 {
       background-color: $sub-color-blue;
     }
-    img{
+    .background {
+      background-color: $sub-color-blue;
+    }
+    img {
       position: absolute;
       top: 3.5rem;
       left: 0rem;
@@ -435,28 +438,29 @@ header {
       height: 150px;
     }
   }
-  .fall{
-    h3{
+  .fall {
+    h3 {
       background-color: $sub-color-brown;
     }
-    .background{
+    .background {
       background-color: $sub-color-brown;
     }
-    img{
+    img {
       position: absolute;
       top: 5rem;
       left: 5rem;
       width: 170px;
       height: 110px;
     }
-  }.winter{
-    h3{
+  }
+  .winter {
+    h3 {
       background-color: $sub-color-indigo;
     }
-    .background{
+    .background {
       background-color: $sub-color-indigo;
     }
-    img{
+    img {
       position: absolute;
       top: 4rem;
       left: 0rem;
@@ -464,20 +468,98 @@ header {
       height: 120px;
     }
   }
-  .menu-right{
+  .menu-right {
     position: relative;
     margin-left: 15%;
   }
-  .menu-left{
+  .menu-left {
     margin: 0 10% 0 5%;
     position: relative;
-    h3{
+    h3 {
       margin-left: 80%;
     }
-    .background{
+    .background {
       margin-left: 30%;
     }
   }
-
 }
 
+.cafe {
+  margin-top: 6rem;
+  .cafe-content {
+    text-align: right;
+    margin-right: 1rem;
+    .background-heading {
+      margin: 0 1rem 0 0;
+      margin-left: calc(100% - 2.5rem);
+      z-index: 0;
+    }
+    // .flex{
+    //   display: flex;
+    // }
+    // .background-cafe {
+    //   width: 100%;
+    //   height: 90vw;
+    //   border-radius: 50%;
+    //   background-color: $sub-color-brown;
+    //   margin-left: -25%;
+    //   margin-top: 1rem;
+    //   z-index: -1;
+    // }
+    // .background-cafe-dot{
+    //   width: 4vw;
+    //   height: 4vw;
+    //   border-radius: 50%;
+    //   background-color: $main-color;
+    //   z-index: 0;
+    //   margin-left: 2rem;
+    // }
+    // .dot-zenzai{
+    //   margin: -16rem 0 0 55%;
+    //   .brown{
+    //     background-color: $sub-color-brown;
+    //   }
+    // }
+    // .dot-parfait{
+    //   margin: 8rem 0 0 0;
+    // }
+  }
+  .cafe-menu{
+    background-image: url(img/cafe-background.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 0% 70%;
+    // margin-top: -20rem
+    p{
+      text-align: left;
+      margin: 0 4rem 4rem 1rem;
+    }
+    h3{
+      font-size: 1.2rem;
+    }
+    .cafe-menu-zenzai{
+      text-align: left;
+      margin-top: -2rem;
+      img{
+        margin: -3rem 0 0 1rem;
+      }
+      h3{
+        text-align: right;
+        margin: 6rem 2rem 0 0;
+      }
+    }
+    .cafe-menu-parfait{
+      h3{
+        text-align: left;
+        margin: 6rem 0 0 2rem;
+      }
+      img{
+        margin-top: -5rem;
+      }
+    }
+  }
+  img {
+    width: 180px;
+    border-radius: 60%;
+  }
+}
