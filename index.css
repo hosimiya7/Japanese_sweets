@@ -79,7 +79,15 @@ h3 {
   background-color: #fffcdd;
 }
 
-.btn a .background-btn {
+.btn a p {
+  margin-top: -2rem;
+  font-size: 1.2rem;
+  font-family: "harenosora";
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.btn .background-btn {
   width: 30px;
   height: 30px;
   background-color: #f1dbdb;
@@ -89,14 +97,6 @@ h3 {
           transform: rotate(45deg);
   z-index: -1;
   margin-left: -10%;
-}
-
-.btn a p {
-  margin-top: -2rem;
-  font-size: 1.2rem;
-  font-family: "harenosora";
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
 }
 
 /*============
@@ -245,6 +245,45 @@ nav .inner ul li a:hover {
 }
 
 /*============
+ トップボタン
+=============*/
+#page_top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #3f98ef;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+#page_top a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+#page_top a::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+/*============
  ヘッダー
 =============*/
 header .header-container {
@@ -321,35 +360,35 @@ header .header-content img {
 }
 
 header .header-img img:nth-child(1) {
-  width: 130px;
-  height: 100px;
+  width: 100px;
+  height: 80px;
   position: absolute;
-  top: 432px;
-  left: calc(25% - 65px);
+  top: 422px;
+  left: calc(25% - 50px);
 }
 
 header .header-img img:nth-child(2) {
-  width: 130px;
-  height: 100px;
+  width: 140px;
+  height: 120px;
   position: absolute;
-  top: 520px;
+  top: 480px;
   left: -40px;
 }
 
 header .header-img img:nth-child(3) {
-  width: 130px;
-  height: 100px;
+  width: 220px;
+  height: 180px;
   position: absolute;
-  top: 550px;
-  left: calc(50% - 65px);
+  top: 490px;
+  left: calc(50% - 100px);
 }
 
 header .header-img img:nth-child(4) {
-  width: 100px;
-  height: 130px;
+  width: 80px;
+  height: 110px;
   position: absolute;
-  top: 416px;
-  left: calc(75% - 65px);
+  top: 410px;
+  left: calc(75% - 40px);
 }
 
 header .header-img img:nth-child(5) {
@@ -357,10 +396,10 @@ header .header-img img:nth-child(5) {
      object-fit: cover;
   -o-object-position: 0% 0%;
      object-position: 0% 0%;
-  width: 80px;
-  height: 130px;
+  width: 100px;
+  height: 140px;
   position: absolute;
-  top: 500px;
+  top: 480px;
   right: 0px;
 }
 
@@ -583,5 +622,57 @@ header .header-img img:nth-child(5) {
 .cafe img {
   width: 180px;
   border-radius: 60%;
+}
+
+.contact .contact-content {
+  margin-left: 1rem;
+}
+
+.contact form {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.contact form p {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.contact form input {
+  border: 1px solid #222;
+  outline: none;
+  width: 100%;
+}
+
+.contact form textarea {
+  border: 1px solid #222;
+  outline: none;
+  width: 100%;
+}
+
+.contact form .btn {
+  margin-top: 1rem;
+}
+
+.contact form .btn input {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  font-family: "harenosora";
+  font-size: 1.2rem;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: 1;
+}
+
+.contact form .btn .background-btn {
+  display: inline-block;
+  margin-bottom: -2.4rem;
+  margin-right: 0.6rem;
+}
+
+footer {
+  background-color: #fcfcfc;
+  margin-top: 6rem;
 }
 /*# sourceMappingURL=index.css.map */

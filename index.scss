@@ -87,16 +87,6 @@ h3{
     &:hover > .background-btn {
       background-color: $sub-color-yellow;
     }
-    .background-btn {
-      width: 30px;
-      height: 30px;
-      background-color: $sub-color-pink;
-      border-radius: 10px;
-      margin-top: 1rem;
-      transform: rotate(45deg);
-      z-index: -1;
-      margin-left: -10%;
-    }
     p {
       margin-top: -2rem;
       font-size: 1.2rem;
@@ -104,6 +94,16 @@ h3{
       // 前面に表示する用
       transform: rotate(0);
     }
+  }
+  .background-btn {
+    width: 30px;
+    height: 30px;
+    background-color: $sub-color-pink;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transform: rotate(45deg);
+    z-index: -1;
+    margin-left: -10%;
   }
 }
 
@@ -231,6 +231,44 @@ nav .inner ul li a:hover {
 }
 
 /*============
+ トップボタン
+=============*/
+
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #3f98ef;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+/*============
  ヘッダー
 =============*/
 
@@ -301,40 +339,40 @@ header {
   .header-img {
     img {
       &:nth-child(1) {
-        width: 130px;
-        height: 100px;
+        width: 100px;
+        height: 80px;
         position: absolute;
-        top: 432px;
-        left: calc(25% - 65px);
+        top: 422px;
+        left: calc(25% - 50px);
       }
       &:nth-child(2) {
-        width: 130px;
-        height: 100px;
+        width: 140px;
+        height: 120px;
         position: absolute;
-        top: 520px;
+        top: 480px;
         left: -40px;
       }
       &:nth-child(3) {
-        width: 130px;
-        height: 100px;
+        width: 220px;
+        height: 180px;
         position: absolute;
-        top: 550px;
-        left: calc(50% - 65px);
+        top: 490px;
+        left: calc(50% - 100px);
       }
       &:nth-child(4) {
-        width: 100px;
-        height: 130px;
+        width: 80px;
+        height: 110px;
         position: absolute;
-        top: 416px;
-        left: calc(75% - 65px);
+        top: 410px;
+        left: calc(75% - 40px);
       }
       &:nth-child(5) {
         object-fit: cover;
         object-position: 0% 0%;
-        width: 80px;
-        height: 130px;
+        width: 100px;
+        height: 140px;
         position: absolute;
-        top: 500px;
+        top: 480px;
         right: 0px;
       }
     }
@@ -494,42 +532,12 @@ header {
       margin-left: calc(100% - 2.5rem);
       z-index: 0;
     }
-    // .flex{
-    //   display: flex;
-    // }
-    // .background-cafe {
-    //   width: 100%;
-    //   height: 90vw;
-    //   border-radius: 50%;
-    //   background-color: $sub-color-brown;
-    //   margin-left: -25%;
-    //   margin-top: 1rem;
-    //   z-index: -1;
-    // }
-    // .background-cafe-dot{
-    //   width: 4vw;
-    //   height: 4vw;
-    //   border-radius: 50%;
-    //   background-color: $main-color;
-    //   z-index: 0;
-    //   margin-left: 2rem;
-    // }
-    // .dot-zenzai{
-    //   margin: -16rem 0 0 55%;
-    //   .brown{
-    //     background-color: $sub-color-brown;
-    //   }
-    // }
-    // .dot-parfait{
-    //   margin: 8rem 0 0 0;
-    // }
   }
   .cafe-menu{
     background-image: url(img/cafe-background.png);
     background-repeat: no-repeat;
     background-size: 110%;
     background-position: 0% 70%;
-    // margin-top: -20rem
     p{
       text-align: left;
       margin: 0 4rem 4rem 1rem;
@@ -562,4 +570,52 @@ header {
     width: 180px;
     border-radius: 60%;
   }
+}
+
+.contact{
+  .contact-content{
+    margin-left: 1rem;
+  }
+  form{
+    width: 65%;
+    margin: 0 auto;
+    p{
+      font-weight: bold;
+      margin-top: 1rem;
+
+    }
+    input{
+      border: 1px solid #222;
+      outline: none;
+      width: 100%;
+    }
+    textarea{
+      border: 1px solid #222;
+      outline: none;
+      width: 100%;
+    }
+    .btn{
+      margin-top: 1rem;
+      input{
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        font-family: $font-family-heading;
+        font-size: 1.2rem;
+        transform: rotate(0deg);
+        z-index: 1;
+      }
+      .background-btn{
+        // margin: 3rem 0 0 6rem;
+        display: inline-block;
+        margin-bottom: -2.4rem;
+        margin-right: 0.6rem;
+      }
+    }
+  }
+}
+
+footer{
+  background-color: #fcfcfc;
+  margin-top: 6rem;
 }
