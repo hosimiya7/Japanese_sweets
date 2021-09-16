@@ -99,6 +99,10 @@ h3 {
   margin-left: -10%;
 }
 
+i:hover {
+  color: #888;
+}
+
 /*============
 ハンバーガーメニュー
 =============*/
@@ -251,11 +255,12 @@ nav .inner ul li a:hover {
   width: 50px;
   height: 50px;
   position: fixed;
-  right: 0;
-  bottom: 0;
-  background: #3f98ef;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  background: #ffffff;
   opacity: 0.6;
   border-radius: 50%;
+  border: 2px solid #000;
 }
 
 #page_top a {
@@ -267,11 +272,11 @@ nav .inner ul li a:hover {
 }
 
 #page_top a::before {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: '\f102';
+  content: "\f102";
   font-size: 25px;
-  color: #fff;
+  color: #000;
   position: absolute;
   width: 25px;
   height: 25px;
@@ -626,11 +631,12 @@ header .header-img img:nth-child(5) {
 
 .contact .contact-content {
   margin-left: 1rem;
+  margin-top: 6rem;
 }
 
 .contact form {
   width: 65%;
-  margin: 0 auto;
+  margin: -6rem auto 0 auto;
 }
 
 .contact form p {
@@ -674,5 +680,53 @@ header .header-img img:nth-child(5) {
 footer {
   background-color: #fcfcfc;
   margin-top: 6rem;
+}
+
+footer .logo img {
+  width: 40px;
+  margin: 1rem 0 0 1rem;
+}
+
+footer .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: -8rem 0 0 90%;
+}
+
+footer .flex i {
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+}
+
+footer .flex .fas {
+  font-size: 1.2rem;
+}
+
+footer .footer-address {
+  width: 56%;
+  margin: -2rem 0 0 3.5rem;
+}
+
+footer .footer-address .bold {
+  font-weight: bold;
+}
+
+footer .btn {
+  text-align: left;
+  margin: 0 0 0 4rem;
+}
+
+footer .btn a {
+  margin: 0;
+}
+
+footer .copy-right {
+  padding: 4rem 0 2rem 0;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

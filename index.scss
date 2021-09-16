@@ -65,7 +65,7 @@ h2 {
   margin-top: -1rem;
 }
 
-h3{
+h3 {
   font-family: $font-family-heading;
   font-weight: normal;
 }
@@ -104,6 +104,12 @@ h3{
     transform: rotate(45deg);
     z-index: -1;
     margin-left: -10%;
+  }
+}
+
+i{
+  &:hover{
+    color: #888;
   }
 }
 
@@ -234,29 +240,30 @@ nav .inner ul li a:hover {
  トップボタン
 =============*/
 
-#page_top{
+#page_top {
   width: 50px;
   height: 50px;
   position: fixed;
-  right: 0;
-  bottom: 0;
-  background: #3f98ef;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  background: $main-color;
   opacity: 0.6;
   border-radius: 50%;
+  border: 2px solid #000;
 }
-#page_top a{
+#page_top a {
   position: relative;
   display: block;
   width: 50px;
   height: 50px;
   text-decoration: none;
 }
-#page_top a::before{
-  font-family: 'Font Awesome 5 Free';
+#page_top a::before {
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: '\f102';
+  content: "\f102";
   font-size: 25px;
-  color: #fff;
+  color: #000;
   position: absolute;
   width: 25px;
   height: 25px;
@@ -533,35 +540,35 @@ header {
       z-index: 0;
     }
   }
-  .cafe-menu{
+  .cafe-menu {
     background-image: url(img/cafe-background.png);
     background-repeat: no-repeat;
     background-size: 110%;
     background-position: 0% 70%;
-    p{
+    p {
       text-align: left;
       margin: 0 4rem 4rem 1rem;
     }
-    h3{
+    h3 {
       font-size: 1.2rem;
     }
-    .cafe-menu-zenzai{
+    .cafe-menu-zenzai {
       text-align: left;
       margin-top: -2rem;
-      img{
+      img {
         margin: -3rem 0 0 1rem;
       }
-      h3{
+      h3 {
         text-align: right;
         margin: 6rem 2rem 0 0;
       }
     }
-    .cafe-menu-parfait{
-      h3{
+    .cafe-menu-parfait {
+      h3 {
         text-align: left;
         margin: 6rem 0 0 2rem;
       }
-      img{
+      img {
         margin-top: -5rem;
       }
     }
@@ -572,31 +579,31 @@ header {
   }
 }
 
-.contact{
-  .contact-content{
+.contact {
+  .contact-content {
     margin-left: 1rem;
+    margin-top: 6rem;
   }
-  form{
+  form {
     width: 65%;
-    margin: 0 auto;
-    p{
+    margin: -6rem auto 0 auto;
+    p {
       font-weight: bold;
       margin-top: 1rem;
-
     }
-    input{
+    input {
       border: 1px solid #222;
       outline: none;
       width: 100%;
     }
-    textarea{
+    textarea {
       border: 1px solid #222;
       outline: none;
       width: 100%;
     }
-    .btn{
+    .btn {
       margin-top: 1rem;
-      input{
+      input {
         display: inline-block;
         background-color: transparent;
         border: none;
@@ -605,7 +612,7 @@ header {
         transform: rotate(0deg);
         z-index: 1;
       }
-      .background-btn{
+      .background-btn {
         // margin: 3rem 0 0 6rem;
         display: inline-block;
         margin-bottom: -2.4rem;
@@ -615,7 +622,43 @@ header {
   }
 }
 
-footer{
+footer {
   background-color: #fcfcfc;
   margin-top: 6rem;
+  .logo {
+    img {
+      width: 40px;
+      margin: 1rem 0 0 1rem;
+    }
+  }
+  .flex {
+    display: flex;
+    flex-flow: column;
+    margin: -8rem 0 0 90%;
+    i {
+      margin-top: 0.8rem;
+      font-size: 1.4rem;
+    }
+    .fas{
+      font-size: 1.2rem;
+    }
+  }
+  .footer-address {
+    width: 56%;
+    margin: -2rem 0 0 3.5rem;
+    .bold {
+      font-weight: bold;
+    }
+  }
+  .btn{
+    text-align: left;
+    margin: 0 0 0 4rem;
+    a{
+      margin: 0;
+    }
+  }
+  .copy-right{
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+  }
 }
