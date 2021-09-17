@@ -40,14 +40,14 @@ $font-family-text-bold: "YugothB";
 $font-family-text: "YugothR";
 
 $breakpoints: (
-    "lg": "screen and (min-width: 900px)",
-    "md": "screen and (min-width: 560px)",
+  "lg": "screen and (min-width: 900px)",
+  "md": "screen and (min-width: 560px)",
 ) !default;
 
 @mixin mq($breakpoint: md) {
-    @media #{map-get($breakpoints, $breakpoint)} {
-        @content;
-    }
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
 }
 
 /*============
@@ -74,7 +74,6 @@ h2 {
   font-size: 1.5rem;
   z-index: 1;
   margin-top: -1rem;
-
 }
 
 h3 {
@@ -119,11 +118,13 @@ h3 {
   }
 }
 
-i{
-  &:hover{
+i {
+  &:hover {
     color: #888;
   }
 }
+
+
 
 /*============
 ハンバーガーメニュー
@@ -538,7 +539,7 @@ header {
     .background {
       margin-left: 6rem;
     }
-    .menu-img{
+    .menu-img {
       margin-left: 8%;
     }
   }
@@ -546,14 +547,14 @@ header {
 
 .cafe {
   margin-top: 6rem;
+  .background-heading {
+    margin: 0 1rem 0 0;
+    margin-left: calc(100% - 2.5rem);
+    z-index: 0;
+  }
   .cafe-content {
     text-align: right;
     margin-right: 1rem;
-    .background-heading {
-      margin: 0 1rem 0 0;
-      margin-left: calc(100% - 2.5rem);
-      z-index: 0;
-    }
   }
   .cafe-menu {
     background-image: url(img/cafe-background.png);
@@ -654,7 +655,7 @@ footer {
       margin-top: 0.8rem;
       font-size: 1.4rem;
     }
-    .fas{
+    .fas {
       font-size: 1.2rem;
     }
   }
@@ -665,15 +666,54 @@ footer {
       font-weight: bold;
     }
   }
-  .btn{
+  .btn {
     text-align: left;
     margin: 0 0 0 4rem;
-    a{
+    a {
       margin: 0;
     }
   }
-  .copy-right{
+  .copy-right {
     padding: 4rem 0 2rem 0;
     text-align: center;
   }
 }
+
+/*============
+レスポンシブ
+=============*/
+
+.center-md {
+  @include mq(md) {
+    text-align: center;
+  }
+}
+.first{
+  .background-heading{
+    @include mq(md) {
+      margin-left: 48%;
+    }
+  }
+}
+.sweet{
+  .background-heading{
+    @include mq(md) {
+      margin-left: 48%;
+    }
+  }
+}
+.cafe{
+  .background-heading{
+    @include mq(md) {
+      margin-left: 48%;
+    }
+  }
+}
+.contact{
+  .background-heading{
+    @include mq(md) {
+      margin-left: 48%;
+    }
+  }
+}
+

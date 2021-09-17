@@ -578,15 +578,15 @@ header .header-img img:nth-child(5) {
   margin-top: 6rem;
 }
 
-.cafe .cafe-content {
-  text-align: right;
-  margin-right: 1rem;
-}
-
-.cafe .cafe-content .background-heading {
+.cafe .background-heading {
   margin: 0 1rem 0 0;
   margin-left: calc(100% - 2.5rem);
   z-index: 0;
+}
+
+.cafe .cafe-content {
+  text-align: right;
+  margin-right: 1rem;
 }
 
 .cafe .cafe-menu {
@@ -732,5 +732,38 @@ footer .btn a {
 footer .copy-right {
   padding: 4rem 0 2rem 0;
   text-align: center;
+}
+
+/*============
+レスポンシブ
+=============*/
+@media screen and (min-width: 560px) {
+  .center-md {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .first .background-heading {
+    margin-left: 48%;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .sweet .background-heading {
+    margin-left: 48%;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .cafe .background-heading {
+    margin-left: 48%;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .contact .background-heading {
+    margin-left: 48%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
