@@ -427,13 +427,13 @@ header .header-img img:nth-child(5) {
   margin-right: 1rem;
 }
 
-.first .first-content .first-content-p {
+.first .first-content-p {
   text-align: left;
   margin: -3rem 0 0 1rem;
   width: 80%;
 }
 
-.first .first-content .first-content-p p {
+.first .first-content-p p {
   margin-bottom: 1rem;
 }
 
@@ -515,7 +515,7 @@ header .header-img img:nth-child(5) {
 .sweet .summer img {
   position: absolute;
   top: 3.5rem;
-  left: 0rem;
+  left: 1.5rem;
   width: 150px;
   height: 150px;
 }
@@ -547,7 +547,7 @@ header .header-img img:nth-child(5) {
 .sweet .winter img {
   position: absolute;
   top: 4rem;
-  left: 0rem;
+  left: 1rem;
   width: 170px;
   height: 120px;
 }
@@ -563,11 +563,15 @@ header .header-img img:nth-child(5) {
 }
 
 .sweet .menu-left h3 {
-  margin-left: 80%;
+  margin-left: 13rem;
 }
 
 .sweet .menu-left .background {
-  margin-left: 30%;
+  margin-left: 6rem;
+}
+
+.sweet .menu-left .menu-img {
+  margin-left: 8%;
 }
 
 .cafe {

@@ -39,6 +39,17 @@ $font-family-heading: "harenosora";
 $font-family-text-bold: "YugothB";
 $font-family-text: "YugothR";
 
+$breakpoints: (
+    "lg": "screen and (min-width: 900px)",
+    "md": "screen and (min-width: 560px)",
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
 /*============
 全体設定
 =============*/
@@ -63,6 +74,7 @@ h2 {
   font-size: 1.5rem;
   z-index: 1;
   margin-top: -1rem;
+
 }
 
 h3 {
@@ -401,13 +413,13 @@ header {
   .first-content {
     text-align: right;
     margin-right: 1rem;
-    .first-content-p {
-      text-align: left;
-      margin: -3rem 0 0 1rem;
-      width: 80%;
-      p {
-        margin-bottom: 1rem;
-      }
+  }
+  .first-content-p {
+    text-align: left;
+    margin: -3rem 0 0 1rem;
+    width: 80%;
+    p {
+      margin-bottom: 1rem;
     }
   }
   .first-img {
@@ -478,7 +490,7 @@ header {
     img {
       position: absolute;
       top: 3.5rem;
-      left: 0rem;
+      left: 1.5rem;
       width: 150px;
       height: 150px;
     }
@@ -508,7 +520,7 @@ header {
     img {
       position: absolute;
       top: 4rem;
-      left: 0rem;
+      left: 1rem;
       width: 170px;
       height: 120px;
     }
@@ -521,10 +533,13 @@ header {
     margin: 0 10% 0 5%;
     position: relative;
     h3 {
-      margin-left: 80%;
+      margin-left: 13rem;
     }
     .background {
-      margin-left: 30%;
+      margin-left: 6rem;
+    }
+    .menu-img{
+      margin-left: 8%;
     }
   }
 }
