@@ -79,6 +79,18 @@ h3 {
   background-color: #fffcdd;
 }
 
+@media screen and (min-width: 560px) {
+  .btn a {
+    margin: 0 30%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .btn a {
+    margin: 0 40%;
+  }
+}
+
 .btn a p {
   margin-top: -2rem;
   font-size: 1.2rem;
@@ -588,6 +600,12 @@ header .header-img img:nth-child(5) {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .sweet .sweet-menu {
+    margin-left: 7%;
+  }
+}
+
 .sweet .sweet-menu h3 {
   display: inline-block;
   border-radius: 50%;
@@ -597,6 +615,19 @@ header .header-img img:nth-child(5) {
 .sweet .sweet-menu p {
   width: 90%;
   margin: 1rem 0;
+}
+
+@media screen and (min-width: 560px) {
+  .sweet .sweet-menu p {
+    width: 250px;
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .sweet .sweet-menu p {
+    width: 300px;
+  }
 }
 
 .sweet .sweet-menu .background {
@@ -639,6 +670,12 @@ header .header-img img:nth-child(5) {
   height: 150px;
 }
 
+@media screen and (min-width: 560px) {
+  .sweet .summer img {
+    left: 4rem;
+  }
+}
+
 .sweet .fall h3 {
   background-color: #f1e2d5;
 }
@@ -671,9 +708,28 @@ header .header-img img:nth-child(5) {
   height: 120px;
 }
 
+@media screen and (min-width: 560px) {
+  .sweet .winter img {
+    left: 4rem;
+  }
+}
+
 .sweet .menu-right {
   position: relative;
   margin-left: 15%;
+}
+
+@media screen and (min-width: 560px) {
+  .sweet .menu-right {
+    width: 45%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .sweet .menu-right .menu-img {
+    margin-right: 30%;
+  }
 }
 
 .sweet .menu-left {
@@ -681,16 +737,41 @@ header .header-img img:nth-child(5) {
   position: relative;
 }
 
+@media screen and (min-width: 560px) {
+  .sweet .menu-left {
+    width: 45%;
+    margin: 0;
+  }
+}
+
 .sweet .menu-left h3 {
   margin-left: 12rem;
+}
+
+@media screen and (min-width: 560px) {
+  .sweet .menu-left h3 {
+    margin-left: 0;
+  }
 }
 
 .sweet .menu-left .background {
   margin-left: 5rem;
 }
 
+@media screen and (min-width: 560px) {
+  .sweet .menu-left .background {
+    margin-left: 0;
+  }
+}
+
 .sweet .menu-left .menu-img {
   margin-left: 8%;
+}
+
+@media screen and (min-width: 560px) {
+  .sweet .menu-left .menu-img {
+    margin-left: 0;
+  }
 }
 
 .cafe {
@@ -724,12 +805,31 @@ header .header-img img:nth-child(5) {
 @media screen and (min-width: 560px) {
   .cafe .cafe-menu {
     margin-top: 3rem;
+    background-size: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cafe .cafe-menu {
+    background-size: 800px;
+    height: 600px;
+    background-position: 0% 0%;
   }
 }
 
 .cafe .cafe-menu p {
   text-align: left;
   margin: 0 4rem 4rem 1rem;
+}
+
+@media screen and (min-width: 560px) {
+  .cafe .cafe-menu p {
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0 1rem 4rem 2rem;
+  }
 }
 
 .cafe .cafe-menu h3 {
@@ -742,41 +842,73 @@ header .header-img img:nth-child(5) {
 }
 
 .cafe .cafe-menu .cafe-menu-zenzai img {
-  margin: -3rem 0 0 1rem;
+  margin: -3rem 0 0 2rem;
+}
+
+@media screen and (min-width: 560px) {
+  .cafe .cafe-menu .cafe-menu-zenzai img {
+    margin-left: calc(50% - 240px);
+  }
 }
 
 .cafe .cafe-menu .cafe-menu-zenzai h3 {
   text-align: right;
-  margin: 6rem 2rem 0 0;
+  margin: 6rem 0 0 0;
+}
+
+@media screen and (min-width: 560px) {
+  .cafe .cafe-menu .cafe-menu-zenzai h3 {
+    margin-right: calc(50% - 150px);
+    margin-top: 3rem;
+  }
 }
 
 .cafe .cafe-menu .cafe-menu-parfait h3 {
   text-align: left;
-  margin: 6rem 0 0 2rem;
+  margin: 6rem 0 0 0.5rem;
+}
+
+@media screen and (min-width: 560px) {
+  .cafe .cafe-menu .cafe-menu-parfait h3 {
+    margin-left: calc(50% - 180px);
+    margin-top: 3rem;
+  }
 }
 
 .cafe .cafe-menu .cafe-menu-parfait img {
   margin-top: -5rem;
 }
 
+@media screen and (min-width: 560px) {
+  .cafe .cafe-menu .cafe-menu-parfait img {
+    margin-right: calc(50% - 240px);
+  }
+}
+
 .cafe img {
-  width: 180px;
+  width: 160px;
   border-radius: 60%;
+}
+
+@media screen and (min-width: 560px) {
+  .cafe img {
+    width: 240px;
+  }
 }
 
 .contact {
   overflow: hidden;
 }
 
+@media screen and (min-width: 560px) {
+  .contact .background-heading {
+    margin-left: 48%;
+  }
+}
+
 .contact .contact-content {
   margin-left: 1rem;
   margin-top: 6rem;
-}
-
-@media screen and (min-width: 560px) {
-  .contact .contact-content {
-    margin-left: 48%;
-  }
 }
 
 .contact .background-contact {
@@ -794,7 +926,13 @@ header .header-img img:nth-child(5) {
 
 @media screen and (min-width: 560px) {
   .contact form {
-    margin-top: 3rem;
+    margin-top: -18rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contact form {
+    width: 600px;
   }
 }
 
@@ -816,7 +954,13 @@ header .header-img img:nth-child(5) {
 }
 
 .contact form .btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+
+.contact form .btn:hover > .background-btn {
+  background-color: #fffcdd;
 }
 
 .contact form .btn input {
@@ -828,17 +972,18 @@ header .header-img img:nth-child(5) {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   z-index: 1;
+  width: 100px;
 }
 
 .contact form .btn .background-btn {
   display: inline-block;
-  margin-bottom: -2.4rem;
-  margin-right: 0.6rem;
+  margin-right: -3rem;
+  margin-bottom: -0.3rem;
 }
 
 footer {
   background-color: #fcfcfc;
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 footer .logo img {
@@ -854,7 +999,16 @@ footer .flex {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  margin: -8rem 0 0 90%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: -8rem 1rem 0 0;
+}
+
+@media screen and (min-width: 560px) {
+  footer .flex {
+    margin-right: 2rem;
+  }
 }
 
 footer .flex i {
@@ -871,6 +1025,12 @@ footer .footer-address {
   margin: -2rem 0 0 3.5rem;
 }
 
+@media screen and (min-width: 560px) {
+  footer .footer-address {
+    margin-left: 6rem;
+  }
+}
+
 footer .footer-address .bold {
   font-weight: bold;
 }
@@ -878,6 +1038,13 @@ footer .footer-address .bold {
 footer .btn {
   text-align: left;
   margin: 0 0 0 4rem;
+}
+
+@media screen and (min-width: 560px) {
+  footer .btn {
+    margin-left: 6.5rem;
+    margin-top: 1rem;
+  }
 }
 
 footer .btn a {
@@ -899,13 +1066,26 @@ footer .copy-right {
 }
 
 @media screen and (min-width: 560px) {
-  .flex-md {
+  .flex-first-md {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .flex-sweet-md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=index.css.map */

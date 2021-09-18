@@ -98,6 +98,12 @@ h3 {
     &:hover > .background-btn {
       background-color: $sub-color-yellow;
     }
+    @include mq(md) {
+      margin: 0 30%;
+    }
+    @include mq(lg) {
+      margin: 0 40%;
+    }
     p {
       margin-top: -2rem;
       font-size: 1.2rem;
@@ -479,7 +485,7 @@ header {
       margin: 5rem 0 0 0;
       margin-left: 9rem;
       @include mq(md) {
-        margin-left: 8rem
+        margin-left: 8rem;
       }
       @include mq(lg) {
         margin-left: 15rem;
@@ -517,6 +523,9 @@ header {
     @include mq(md) {
       margin-top: 3rem;
     }
+    @include mq(lg) {
+      margin-left: 7%;
+    }
     h3 {
       display: inline-block;
       border-radius: 50%;
@@ -525,6 +534,13 @@ header {
     p {
       width: 90%;
       margin: 1rem 0;
+      @include mq(md) {
+        width: 250px;
+        margin: 1rem auto;
+      }
+      @include mq(lg) {
+        width: 300px;
+      }
     }
     .background {
       width: 150px;
@@ -561,6 +577,9 @@ header {
       left: 1.5rem;
       width: 150px;
       height: 150px;
+      @include mq(md) {
+        left: 4rem;
+      }
     }
   }
   .fall {
@@ -591,23 +610,48 @@ header {
       left: 1rem;
       width: 170px;
       height: 120px;
+      @include mq(md) {
+        left: 4rem;
+      }
     }
   }
   .menu-right {
     position: relative;
     margin-left: 15%;
+    @include mq(md) {
+      width: 45%;
+      margin: 0;
+    }
+    .menu-img {
+      @include mq(md) {
+        margin-right: 30%;
+      }
+    }
   }
   .menu-left {
     margin: 0 10% 0 5%;
     position: relative;
+    @include mq(md) {
+      width: 45%;
+      margin: 0;
+    }
     h3 {
       margin-left: 12rem;
+      @include mq(md) {
+        margin-left: 0;
+      }
     }
     .background {
       margin-left: 5rem;
+      @include mq(md) {
+        margin-left: 0;
+      }
     }
     .menu-img {
       margin-left: 8%;
+      @include mq(md) {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -633,10 +677,22 @@ header {
     background-position: 0% 70%;
     @include mq(md) {
       margin-top: 3rem;
+      background-size: 600px;
+      object-fit: cover;
+    }
+    @include mq(lg) {
+      background-size: 800px;
+      height: 600px;
+      background-position: 0% 0%;
     }
     p {
       text-align: left;
       margin: 0 4rem 4rem 1rem;
+      @include mq(md) {
+        text-align: center;
+        padding: 2rem 0;
+        margin: 0 1rem 4rem 2rem;
+      }
     }
     h3 {
       font-size: 1.2rem;
@@ -645,36 +701,58 @@ header {
       text-align: left;
       margin-top: -2rem;
       img {
-        margin: -3rem 0 0 1rem;
+        margin: -3rem 0 0 2rem;
+        @include mq(md) {
+          margin-left: calc(50% - 240px);
+        }
       }
       h3 {
         text-align: right;
-        margin: 6rem 2rem 0 0;
+        margin: 6rem 0 0 0;
+        @include mq(md) {
+          margin-right: calc(50% - 150px);
+          margin-top: 3rem;
+        }
       }
     }
     .cafe-menu-parfait {
       h3 {
         text-align: left;
-        margin: 6rem 0 0 2rem;
+        margin: 6rem 0 0 0.5rem;
+        @include mq(md) {
+          margin-left: calc(50% - 180px);
+          margin-top: 3rem;
+        }
       }
       img {
         margin-top: -5rem;
+        @include mq(md) {
+          margin-right: calc(50% - 240px);
+        }
       }
     }
   }
   img {
-    width: 180px;
+    width: 160px;
     border-radius: 60%;
+    @include mq(md) {
+      width: 240px;
+    }
   }
 }
 
 .contact {
   overflow: hidden;
+  .background-heading {
+    @include mq(md) {
+      margin-left: 48%;
+    }
+  }
   .contact-content {
     margin-left: 1rem;
     margin-top: 6rem;
     @include mq(md) {
-      margin-left: 48%;
+      // margin-left: 48%;
     }
   }
   .background-contact {
@@ -688,7 +766,10 @@ header {
     width: 65%;
     margin: -24rem auto 0 auto;
     @include mq(md) {
-      margin-top: 3rem;
+      margin-top: -18rem;
+    }
+    @include mq(lg) {
+      width: 600px;
     }
     p {
       font-weight: bold;
@@ -705,7 +786,12 @@ header {
       width: 100%;
     }
     .btn {
-      margin-top: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      margin-left: 3rem;
+      &:hover > .background-btn {
+        background-color: $sub-color-yellow;
+      }
       input {
         display: inline-block;
         background-color: transparent;
@@ -714,12 +800,12 @@ header {
         font-size: 1.2rem;
         transform: rotate(0deg);
         z-index: 1;
+        width: 100px;
       }
       .background-btn {
-        // margin: 3rem 0 0 6rem;
         display: inline-block;
-        margin-bottom: -2.4rem;
-        margin-right: 0.6rem;
+        margin-right: -3rem;
+        margin-bottom: -0.3rem;
       }
     }
   }
@@ -727,7 +813,7 @@ header {
 
 footer {
   background-color: #fcfcfc;
-  margin-top: 6rem;
+  margin-top: 5rem;
   .logo {
     img {
       width: 40px;
@@ -737,7 +823,11 @@ footer {
   .flex {
     display: flex;
     flex-flow: column;
-    margin: -8rem 0 0 90%;
+    align-items: flex-end;
+    margin: -8rem 1rem 0 0;
+    @include mq(md) {
+      margin-right: 2rem;
+    }
     i {
       margin-top: 0.8rem;
       font-size: 1.4rem;
@@ -749,6 +839,9 @@ footer {
   .footer-address {
     width: 56%;
     margin: -2rem 0 0 3.5rem;
+    @include mq(md) {
+      margin-left: 6rem;
+    }
     .bold {
       font-weight: bold;
     }
@@ -756,6 +849,10 @@ footer {
   .btn {
     text-align: left;
     margin: 0 0 0 4rem;
+    @include mq(md) {
+      margin-left: 6.5rem;
+      margin-top: 1rem;
+    }
     a {
       margin: 0;
     }
@@ -776,9 +873,17 @@ footer {
   }
 }
 
-.flex-md {
+.flex-first-md {
   @include mq(md) {
     display: flex;
     justify-content: center;
+  }
+}
+
+.flex-sweet-md {
+  @include mq(md) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
