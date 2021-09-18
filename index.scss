@@ -124,8 +124,6 @@ i {
   }
 }
 
-
-
 /*============
 ハンバーガーメニュー
 =============*/
@@ -364,6 +362,11 @@ header {
         position: absolute;
         top: 422px;
         left: calc(25% - 50px);
+        @include mq(md) {
+          width: 200px;
+          height: 160px;
+          left: calc(25% - 100px);
+        }
       }
       &:nth-child(2) {
         width: 140px;
@@ -371,6 +374,14 @@ header {
         position: absolute;
         top: 480px;
         left: -40px;
+        @include mq(md) {
+          width: 210px;
+          height: 150px;
+          left: -70px;
+        }
+        @include mq(lg) {
+          top: 350px;
+        }
       }
       &:nth-child(3) {
         width: 220px;
@@ -385,6 +396,12 @@ header {
         position: absolute;
         top: 410px;
         left: calc(75% - 40px);
+        @include mq(md) {
+          width: 120px;
+          height: 165px;
+          top: 420px;
+          left: calc(75% - 60px);
+        }
       }
       &:nth-child(5) {
         object-fit: cover;
@@ -394,6 +411,15 @@ header {
         position: absolute;
         top: 480px;
         right: 0px;
+        @include mq(md) {
+          width: 140px;
+          height: 205px;
+          right: 0px;
+          top: 450px;
+        }
+        @include mq(lg) {
+          top: 340px;
+        }
       }
     }
   }
@@ -410,6 +436,9 @@ header {
     margin: 0 1rem 0 0;
     margin-left: calc(100% - 2.5rem);
     z-index: 0;
+    @include mq(md) {
+      margin-left: 48%;
+    }
   }
   .first-content {
     text-align: right;
@@ -419,6 +448,9 @@ header {
     text-align: left;
     margin: -3rem 0 0 1rem;
     width: 80%;
+    @include mq(md) {
+      margin-top: 3rem;
+    }
     p {
       margin-bottom: 1rem;
     }
@@ -446,11 +478,19 @@ header {
 
 .sweet {
   margin-top: 6rem;
+  .background-heading {
+    @include mq(md) {
+      margin-left: 48%;
+    }
+  }
   .sweet-content {
     margin-left: 1rem;
   }
   .sweet-menu {
     margin-top: -12rem;
+    @include mq(md) {
+      margin-top: 3rem;
+    }
     h3 {
       display: inline-block;
       border-radius: 50%;
@@ -551,6 +591,9 @@ header {
     margin: 0 1rem 0 0;
     margin-left: calc(100% - 2.5rem);
     z-index: 0;
+    @include mq(md) {
+      margin-left: 48%;
+    }
   }
   .cafe-content {
     text-align: right;
@@ -561,6 +604,9 @@ header {
     background-repeat: no-repeat;
     background-size: 110%;
     background-position: 0% 70%;
+    @include mq(md) {
+      margin-top: 3rem;
+    }
     p {
       text-align: left;
       margin: 0 4rem 4rem 1rem;
@@ -596,13 +642,27 @@ header {
 }
 
 .contact {
+  overflow: hidden;
   .contact-content {
     margin-left: 1rem;
     margin-top: 6rem;
+    @include mq(md) {
+      margin-left: 48%;
+    }
+  }
+  .background-contact {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: $sub-color-yellow;
+    margin-left: calc(100% - 240px);
   }
   form {
     width: 65%;
-    margin: -6rem auto 0 auto;
+    margin: -24rem auto 0 auto;
+    @include mq(md) {
+      margin-top: 3rem;
+    }
     p {
       font-weight: bold;
       margin-top: 1rem;
@@ -688,32 +748,3 @@ footer {
     text-align: center;
   }
 }
-.first{
-  .background-heading{
-    @include mq(md) {
-      margin-left: 48%;
-    }
-  }
-}
-.sweet{
-  .background-heading{
-    @include mq(md) {
-      margin-left: 48%;
-    }
-  }
-}
-.cafe{
-  .background-heading{
-    @include mq(md) {
-      margin-left: 48%;
-    }
-  }
-}
-.contact{
-  .background-heading{
-    @include mq(md) {
-      margin-left: 48%;
-    }
-  }
-}
-

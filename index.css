@@ -372,12 +372,34 @@ header .header-img img:nth-child(1) {
   left: calc(25% - 50px);
 }
 
+@media screen and (min-width: 560px) {
+  header .header-img img:nth-child(1) {
+    width: 200px;
+    height: 160px;
+    left: calc(25% - 100px);
+  }
+}
+
 header .header-img img:nth-child(2) {
   width: 140px;
   height: 120px;
   position: absolute;
   top: 480px;
   left: -40px;
+}
+
+@media screen and (min-width: 560px) {
+  header .header-img img:nth-child(2) {
+    width: 210px;
+    height: 150px;
+    left: -70px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header .header-img img:nth-child(2) {
+    top: 350px;
+  }
 }
 
 header .header-img img:nth-child(3) {
@@ -396,6 +418,15 @@ header .header-img img:nth-child(4) {
   left: calc(75% - 40px);
 }
 
+@media screen and (min-width: 560px) {
+  header .header-img img:nth-child(4) {
+    width: 120px;
+    height: 165px;
+    top: 420px;
+    left: calc(75% - 60px);
+  }
+}
+
 header .header-img img:nth-child(5) {
   -o-object-fit: cover;
      object-fit: cover;
@@ -406,6 +437,21 @@ header .header-img img:nth-child(5) {
   position: absolute;
   top: 480px;
   right: 0px;
+}
+
+@media screen and (min-width: 560px) {
+  header .header-img img:nth-child(5) {
+    width: 140px;
+    height: 205px;
+    right: 0px;
+    top: 450px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header .header-img img:nth-child(5) {
+    top: 340px;
+  }
 }
 
 /*============
@@ -422,6 +468,12 @@ header .header-img img:nth-child(5) {
   z-index: 0;
 }
 
+@media screen and (min-width: 560px) {
+  .first .background-heading {
+    margin-left: 48%;
+  }
+}
+
 .first .first-content {
   text-align: right;
   margin-right: 1rem;
@@ -431,6 +483,12 @@ header .header-img img:nth-child(5) {
   text-align: left;
   margin: -3rem 0 0 1rem;
   width: 80%;
+}
+
+@media screen and (min-width: 560px) {
+  .first .first-content-p {
+    margin-top: 3rem;
+  }
 }
 
 .first .first-content-p p {
@@ -463,12 +521,24 @@ header .header-img img:nth-child(5) {
   margin-top: 6rem;
 }
 
+@media screen and (min-width: 560px) {
+  .sweet .background-heading {
+    margin-left: 48%;
+  }
+}
+
 .sweet .sweet-content {
   margin-left: 1rem;
 }
 
 .sweet .sweet-menu {
   margin-top: -12rem;
+}
+
+@media screen and (min-width: 560px) {
+  .sweet .sweet-menu {
+    margin-top: 3rem;
+  }
 }
 
 .sweet .sweet-menu h3 {
@@ -584,6 +654,12 @@ header .header-img img:nth-child(5) {
   z-index: 0;
 }
 
+@media screen and (min-width: 560px) {
+  .cafe .background-heading {
+    margin-left: 48%;
+  }
+}
+
 .cafe .cafe-content {
   text-align: right;
   margin-right: 1rem;
@@ -594,6 +670,12 @@ header .header-img img:nth-child(5) {
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: 0% 70%;
+}
+
+@media screen and (min-width: 560px) {
+  .cafe .cafe-menu {
+    margin-top: 3rem;
+  }
 }
 
 .cafe .cafe-menu p {
@@ -633,14 +715,38 @@ header .header-img img:nth-child(5) {
   border-radius: 60%;
 }
 
+.contact {
+  overflow: hidden;
+}
+
 .contact .contact-content {
   margin-left: 1rem;
   margin-top: 6rem;
 }
 
+@media screen and (min-width: 560px) {
+  .contact .contact-content {
+    margin-left: 48%;
+  }
+}
+
+.contact .background-contact {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #fffcdd;
+  margin-left: calc(100% - 240px);
+}
+
 .contact form {
   width: 65%;
-  margin: -6rem auto 0 auto;
+  margin: -24rem auto 0 auto;
+}
+
+@media screen and (min-width: 560px) {
+  .contact form {
+    margin-top: 3rem;
+  }
 }
 
 .contact form p {
@@ -740,30 +846,6 @@ footer .copy-right {
 @media screen and (min-width: 560px) {
   .center-md {
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 560px) {
-  .first .background-heading {
-    margin-left: 48%;
-  }
-}
-
-@media screen and (min-width: 560px) {
-  .sweet .background-heading {
-    margin-left: 48%;
-  }
-}
-
-@media screen and (min-width: 560px) {
-  .cafe .background-heading {
-    margin-left: 48%;
-  }
-}
-
-@media screen and (min-width: 560px) {
-  .contact .background-heading {
-    margin-left: 48%;
   }
 }
 /*# sourceMappingURL=index.css.map */
