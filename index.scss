@@ -40,8 +40,8 @@ $font-family-text-bold: "YugothB";
 $font-family-text: "YugothR";
 
 $breakpoints: (
-  "lg": "screen and (min-width: 900px)",
   "md": "screen and (min-width: 560px)",
+  "lg": "screen and (min-width: 900px)",
 ) !default;
 
 @mixin mq($breakpoint: md) {
@@ -450,6 +450,11 @@ header {
     width: 80%;
     @include mq(md) {
       margin-top: 3rem;
+      margin-right: 1rem;
+      width: 300px;
+    }
+    @include mq(lg) {
+      width: 400px;
     }
     p {
       margin-bottom: 1rem;
@@ -458,20 +463,41 @@ header {
   .first-img {
     overflow: hidden;
     position: relative;
+    @include mq(md) {
+      width: 300px;
+      margin: 0 0 0 1rem;
+    }
+    @include mq(lg) {
+      width: 400px;
+      margin: 0 0 0 3rem;
+    }
     .background-first-img {
       width: 150px;
       height: 150px;
       background-color: $sub-color-yellow;
       border-radius: 50%;
       margin: 5rem 0 0 0;
-      margin-left: calc(100% - 130px);
+      margin-left: 9rem;
+      @include mq(md) {
+        margin-left: 8rem
+      }
+      @include mq(lg) {
+        margin-left: 15rem;
+        margin-top: 7rem;
+      }
     }
     img {
       position: absolute;
-      width: 70%;
+      width: 230px;
       border-radius: 70px;
       top: 2rem;
       left: 1rem;
+      @include mq(md) {
+        width: 220px;
+      }
+      @include mq(md) {
+        width: 300px;
+      }
     }
   }
 }
@@ -517,8 +543,9 @@ header {
       position: absolute;
       top: 3.5rem;
       left: 5rem;
-      width: 180px;
+      width: 160px;
       height: 150px;
+      object-fit: cover;
     }
   }
   .summer {
@@ -546,7 +573,7 @@ header {
     img {
       position: absolute;
       top: 5rem;
-      left: 5rem;
+      left: 4rem;
       width: 170px;
       height: 110px;
     }
@@ -574,10 +601,10 @@ header {
     margin: 0 10% 0 5%;
     position: relative;
     h3 {
-      margin-left: 13rem;
+      margin-left: 12rem;
     }
     .background {
-      margin-left: 6rem;
+      margin-left: 5rem;
     }
     .menu-img {
       margin-left: 8%;
@@ -746,5 +773,12 @@ footer {
 .center-md {
   @include mq(md) {
     text-align: center;
+  }
+}
+
+.flex-md {
+  @include mq(md) {
+    display: flex;
+    justify-content: center;
   }
 }

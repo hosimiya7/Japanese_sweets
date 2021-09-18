@@ -488,6 +488,14 @@ header .header-img img:nth-child(5) {
 @media screen and (min-width: 560px) {
   .first .first-content-p {
     margin-top: 3rem;
+    margin-right: 1rem;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .first .first-content-p {
+    width: 400px;
   }
 }
 
@@ -500,21 +508,60 @@ header .header-img img:nth-child(5) {
   position: relative;
 }
 
+@media screen and (min-width: 560px) {
+  .first .first-img {
+    width: 300px;
+    margin: 0 0 0 1rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .first .first-img {
+    width: 400px;
+    margin: 0 0 0 3rem;
+  }
+}
+
 .first .first-img .background-first-img {
   width: 150px;
   height: 150px;
   background-color: #fffcdd;
   border-radius: 50%;
   margin: 5rem 0 0 0;
-  margin-left: calc(100% - 130px);
+  margin-left: 9rem;
+}
+
+@media screen and (min-width: 560px) {
+  .first .first-img .background-first-img {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .first .first-img .background-first-img {
+    margin-left: 15rem;
+    margin-top: 7rem;
+  }
 }
 
 .first .first-img img {
   position: absolute;
-  width: 70%;
+  width: 230px;
   border-radius: 70px;
   top: 2rem;
   left: 1rem;
+}
+
+@media screen and (min-width: 560px) {
+  .first .first-img img {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .first .first-img img {
+    width: 300px;
+  }
 }
 
 .sweet {
@@ -570,8 +617,10 @@ header .header-img img:nth-child(5) {
   position: absolute;
   top: 3.5rem;
   left: 5rem;
-  width: 180px;
+  width: 160px;
   height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sweet .summer h3 {
@@ -601,7 +650,7 @@ header .header-img img:nth-child(5) {
 .sweet .fall img {
   position: absolute;
   top: 5rem;
-  left: 5rem;
+  left: 4rem;
   width: 170px;
   height: 110px;
 }
@@ -633,11 +682,11 @@ header .header-img img:nth-child(5) {
 }
 
 .sweet .menu-left h3 {
-  margin-left: 13rem;
+  margin-left: 12rem;
 }
 
 .sweet .menu-left .background {
-  margin-left: 6rem;
+  margin-left: 5rem;
 }
 
 .sweet .menu-left .menu-img {
@@ -846,6 +895,17 @@ footer .copy-right {
 @media screen and (min-width: 560px) {
   .center-md {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .flex-md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=index.css.map */
