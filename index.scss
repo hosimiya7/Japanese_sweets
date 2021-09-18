@@ -395,8 +395,11 @@ header {
         width: 220px;
         height: 180px;
         position: absolute;
-        top: 490px;
+        top: calc(90vh - 180px);
         left: calc(50% - 100px);
+        @include mq(lg) {
+          top: 490px;
+        }
       }
       &:nth-child(4) {
         width: 80px;

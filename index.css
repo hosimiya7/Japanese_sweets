@@ -420,8 +420,14 @@ header .header-img img:nth-child(3) {
   width: 220px;
   height: 180px;
   position: absolute;
-  top: 490px;
+  top: calc(90vh - 180px);
   left: calc(50% - 100px);
+}
+
+@media screen and (min-width: 900px) {
+  header .header-img img:nth-child(3) {
+    top: 490px;
+  }
 }
 
 header .header-img img:nth-child(4) {
