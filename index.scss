@@ -443,12 +443,15 @@ header {
     margin-left: calc(100% - 2.5rem);
     z-index: 0;
     @include mq(md) {
-      margin-left: 48%;
+      margin-left: 49%;
     }
   }
   .first-content {
     text-align: right;
     margin-right: 1rem;
+    @include mq(md) {
+      margin-right: 0rem;
+    }
   }
   .first-content-p {
     text-align: left;
@@ -509,14 +512,17 @@ header {
 }
 
 .sweet {
-  margin-top: 6rem;
+  margin-top: 10rem;
   .background-heading {
     @include mq(md) {
-      margin-left: 48%;
+      margin-left: 49%;
     }
   }
   .sweet-content {
     margin-left: 1rem;
+    @include mq(md) {
+      margin-left: 0rem;
+    }
   }
   .sweet-menu {
     margin-top: -12rem;
@@ -657,18 +663,21 @@ header {
 }
 
 .cafe {
-  margin-top: 6rem;
+  margin-top: 10rem;
   .background-heading {
     margin: 0 1rem 0 0;
     margin-left: calc(100% - 2.5rem);
     z-index: 0;
     @include mq(md) {
-      margin-left: 48%;
+      margin-left: 49%;
     }
   }
   .cafe-content {
     text-align: right;
     margin-right: 1rem;
+    @include mq(md) {
+      margin-right: 0;
+    }
   }
   .cafe-menu {
     background-image: url(img/cafe-background.png);
@@ -705,6 +714,9 @@ header {
         @include mq(md) {
           margin-left: calc(50% - 240px);
         }
+        @include mq(lg) {
+          margin-left: calc(50% - 360px);
+        }
       }
       h3 {
         text-align: right;
@@ -713,9 +725,15 @@ header {
           margin-right: calc(50% - 150px);
           margin-top: 3rem;
         }
+        @include mq(lg) {
+          margin-top: 6rem;
+        }
       }
     }
     .cafe-menu-parfait {
+      @include mq(lg) {
+        margin-top: -4rem;
+      }
       h3 {
         text-align: left;
         margin: 6rem 0 0 0.5rem;
@@ -723,11 +741,17 @@ header {
           margin-left: calc(50% - 180px);
           margin-top: 3rem;
         }
+        @include mq(lg) {
+          margin-top: 6rem;
+        }
       }
       img {
         margin-top: -5rem;
         @include mq(md) {
           margin-right: calc(50% - 240px);
+        }
+        @include mq(lg) {
+          margin-right: calc(50% - 360px);
         }
       }
     }
@@ -738,6 +762,9 @@ header {
     @include mq(md) {
       width: 240px;
     }
+    @include mq(lg) {
+      width: 360px;
+    }
   }
 }
 
@@ -745,14 +772,14 @@ header {
   overflow: hidden;
   .background-heading {
     @include mq(md) {
-      margin-left: 48%;
+      margin-left: 49%;
     }
   }
   .contact-content {
     margin-left: 1rem;
-    margin-top: 6rem;
+    margin-top: 10rem;
     @include mq(md) {
-      // margin-left: 48%;
+      margin-left: 0;
     }
   }
   .background-contact {
@@ -761,6 +788,9 @@ header {
     border-radius: 50%;
     background-color: $sub-color-yellow;
     margin-left: calc(100% - 240px);
+    @include mq(lg) {
+      margin-left: calc(80% - 240px);
+    }
   }
   form {
     width: 65%;

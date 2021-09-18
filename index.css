@@ -482,13 +482,19 @@ header .header-img img:nth-child(5) {
 
 @media screen and (min-width: 560px) {
   .first .background-heading {
-    margin-left: 48%;
+    margin-left: 49%;
   }
 }
 
 .first .first-content {
   text-align: right;
   margin-right: 1rem;
+}
+
+@media screen and (min-width: 560px) {
+  .first .first-content {
+    margin-right: 0rem;
+  }
 }
 
 .first .first-content-p {
@@ -577,17 +583,23 @@ header .header-img img:nth-child(5) {
 }
 
 .sweet {
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 @media screen and (min-width: 560px) {
   .sweet .background-heading {
-    margin-left: 48%;
+    margin-left: 49%;
   }
 }
 
 .sweet .sweet-content {
   margin-left: 1rem;
+}
+
+@media screen and (min-width: 560px) {
+  .sweet .sweet-content {
+    margin-left: 0rem;
+  }
 }
 
 .sweet .sweet-menu {
@@ -775,7 +787,7 @@ header .header-img img:nth-child(5) {
 }
 
 .cafe {
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 .cafe .background-heading {
@@ -786,13 +798,19 @@ header .header-img img:nth-child(5) {
 
 @media screen and (min-width: 560px) {
   .cafe .background-heading {
-    margin-left: 48%;
+    margin-left: 49%;
   }
 }
 
 .cafe .cafe-content {
   text-align: right;
   margin-right: 1rem;
+}
+
+@media screen and (min-width: 560px) {
+  .cafe .cafe-content {
+    margin-right: 0;
+  }
 }
 
 .cafe .cafe-menu {
@@ -851,6 +869,12 @@ header .header-img img:nth-child(5) {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .cafe .cafe-menu .cafe-menu-zenzai img {
+    margin-left: calc(50% - 360px);
+  }
+}
+
 .cafe .cafe-menu .cafe-menu-zenzai h3 {
   text-align: right;
   margin: 6rem 0 0 0;
@@ -860,6 +884,18 @@ header .header-img img:nth-child(5) {
   .cafe .cafe-menu .cafe-menu-zenzai h3 {
     margin-right: calc(50% - 150px);
     margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cafe .cafe-menu .cafe-menu-zenzai h3 {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cafe .cafe-menu .cafe-menu-parfait {
+    margin-top: -4rem;
   }
 }
 
@@ -875,6 +911,12 @@ header .header-img img:nth-child(5) {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .cafe .cafe-menu .cafe-menu-parfait h3 {
+    margin-top: 6rem;
+  }
+}
+
 .cafe .cafe-menu .cafe-menu-parfait img {
   margin-top: -5rem;
 }
@@ -882,6 +924,12 @@ header .header-img img:nth-child(5) {
 @media screen and (min-width: 560px) {
   .cafe .cafe-menu .cafe-menu-parfait img {
     margin-right: calc(50% - 240px);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cafe .cafe-menu .cafe-menu-parfait img {
+    margin-right: calc(50% - 360px);
   }
 }
 
@@ -896,19 +944,31 @@ header .header-img img:nth-child(5) {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .cafe img {
+    width: 360px;
+  }
+}
+
 .contact {
   overflow: hidden;
 }
 
 @media screen and (min-width: 560px) {
   .contact .background-heading {
-    margin-left: 48%;
+    margin-left: 49%;
   }
 }
 
 .contact .contact-content {
   margin-left: 1rem;
-  margin-top: 6rem;
+  margin-top: 10rem;
+}
+
+@media screen and (min-width: 560px) {
+  .contact .contact-content {
+    margin-left: 0;
+  }
 }
 
 .contact .background-contact {
@@ -917,6 +977,12 @@ header .header-img img:nth-child(5) {
   border-radius: 50%;
   background-color: #fffcdd;
   margin-left: calc(100% - 240px);
+}
+
+@media screen and (min-width: 900px) {
+  .contact .background-contact {
+    margin-left: calc(80% - 240px);
+  }
 }
 
 .contact form {
