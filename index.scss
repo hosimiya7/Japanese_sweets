@@ -366,9 +366,10 @@ header {
         width: 100px;
         height: 80px;
         position: absolute;
-        top: 422px;
+        top: calc(70vh - 80px);
         left: calc(25% - 50px);
         @include mq(md) {
+          top: 422px;
           width: 200px;
           height: 160px;
           left: calc(25% - 100px);
@@ -378,9 +379,10 @@ header {
         width: 140px;
         height: 120px;
         position: absolute;
-        top: 480px;
+        top: calc(85vh - 140px);
         left: -40px;
         @include mq(md) {
+          top: 480px;
           width: 210px;
           height: 150px;
           left: -70px;
@@ -400,9 +402,10 @@ header {
         width: 80px;
         height: 110px;
         position: absolute;
-        top: 410px;
+        top: calc(70vh - 80px);
         left: calc(75% - 40px);
         @include mq(md) {
+          top: 410px;
           width: 120px;
           height: 165px;
           top: 420px;
@@ -415,7 +418,7 @@ header {
         width: 100px;
         height: 140px;
         position: absolute;
-        top: 480px;
+        top: calc(85vh - 140px);
         right: 0px;
         @include mq(md) {
           width: 140px;

@@ -380,12 +380,13 @@ header .header-img img:nth-child(1) {
   width: 100px;
   height: 80px;
   position: absolute;
-  top: 422px;
+  top: calc(70vh - 80px);
   left: calc(25% - 50px);
 }
 
 @media screen and (min-width: 560px) {
   header .header-img img:nth-child(1) {
+    top: 422px;
     width: 200px;
     height: 160px;
     left: calc(25% - 100px);
@@ -396,12 +397,13 @@ header .header-img img:nth-child(2) {
   width: 140px;
   height: 120px;
   position: absolute;
-  top: 480px;
+  top: calc(85vh - 140px);
   left: -40px;
 }
 
 @media screen and (min-width: 560px) {
   header .header-img img:nth-child(2) {
+    top: 480px;
     width: 210px;
     height: 150px;
     left: -70px;
@@ -426,12 +428,13 @@ header .header-img img:nth-child(4) {
   width: 80px;
   height: 110px;
   position: absolute;
-  top: 410px;
+  top: calc(70vh - 80px);
   left: calc(75% - 40px);
 }
 
 @media screen and (min-width: 560px) {
   header .header-img img:nth-child(4) {
+    top: 410px;
     width: 120px;
     height: 165px;
     top: 420px;
@@ -447,7 +450,7 @@ header .header-img img:nth-child(5) {
   width: 100px;
   height: 140px;
   position: absolute;
-  top: 480px;
+  top: calc(85vh - 140px);
   right: 0px;
 }
 
