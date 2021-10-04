@@ -387,7 +387,7 @@ header {
         @include mq(md) {
           width: 210px;
           height: 150px;
-          top: calc(70vh - 150px);
+          top: calc(80vh - 150px);
           left: -70px;
         }
         @include mq(lg) {
