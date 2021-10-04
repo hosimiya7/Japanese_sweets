@@ -5,7 +5,7 @@
 @import url(sanitize.css);
 @font-face {
   font-family: "HannariMincho";
-  src: url(font/HannariMincho-Regular.otf);
+  src: url(font/HannariMincho.otf);
 }
 
 @font-face {
@@ -411,7 +411,7 @@ header .header-img img:nth-child(2) {
   header .header-img img:nth-child(2) {
     width: 210px;
     height: 150px;
-    top: calc(70vh - 150px);
+    top: calc(80vh - 150px);
     left: -70px;
   }
 }
